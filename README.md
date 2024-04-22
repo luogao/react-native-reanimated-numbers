@@ -1,6 +1,6 @@
 # react-native-reanimated-numbers
 
-react native library shows animation when numebrs change, powered by reanimated
+react native library shows animation when numbers change, powered by reanimated
 
 ## Installation
 
