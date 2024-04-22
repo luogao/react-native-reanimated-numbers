@@ -1,18 +1,27 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-reanimated-numbers';
+import { StyleSheet, View, Button, Alert } from 'react-native';
+import AnimatedNumber from 'react-native-reanimated-numbers';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  const [animateToNumber, setAnimateToNumber] = React.useState(18888);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <AnimatedNumber
+        animateToNumber={animateToNumber}
+        fontStyle={{
+          fontSize: 30,
+        }}
+        onAnimationFinished={() => {
+          Alert.alert('Animation finished');
+        }}
+      />
+
+      <Button
+        title="Animate"
+        onPress={() => setAnimateToNumber(Math.floor(Math.random() * 10000))}
+      />
     </View>
   );
 }
