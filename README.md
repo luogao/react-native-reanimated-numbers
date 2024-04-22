@@ -2,6 +2,20 @@
 
 react native library shows animation when numbers change, powered by reanimated
 
+
+## Important
+限制了最小 react-native 版本 和 reanimated 版本
+
+"react-native-reanimated": "3.6.0"
+
+"react-native": "0.72.5"
+
+
+reanimated 的安装，请参考[官方文档](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started)
+
+![demo_gif](example_gif.gif)
+
+
 ## Installation
 
 ```sh
