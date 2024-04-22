@@ -1,6 +1,6 @@
 {
   "name": "react-native-reanimated-numbers",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "react native library shows animation when numbers change, powered by reanimated",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
